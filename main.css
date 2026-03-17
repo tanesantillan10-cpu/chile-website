@@ -133,13 +133,6 @@ nav {
     white-space: nowrap;
 }
 
-.dropdown-content li a:hover,
-.dropdown-content li a.active {
-    background-color: #A00000; 
-    color: #ffffff;            
-    box-shadow: 0 4px 8px rgba(160, 0, 0, 0.2);
-}
-
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
