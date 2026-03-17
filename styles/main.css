@@ -170,10 +170,8 @@ main .why-chile p{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: 0.2s ease;
 }
 .card:hover{
-    transform:translateY(-4px);
     border-bottom-color:#000080;
 }
 
