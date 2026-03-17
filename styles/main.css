@@ -1,0 +1,1898 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Helvetica', Arial, sans-serif;
+    line-height:1.6;
+    background:#f9f9f9;
+    color:#000;
+}
+
+header {
+    font-family: Sreba, sans-serif;
+    background: #fff;
+    padding: 10px 15px;
+    margin: 10px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    border: 5px solid #00008b;
+    font-size: 60px;
+    gap: 0px;
+}
+
+.header-line {
+    width: 400px;              
+    height: 3px;
+    background-color: #0039A6;
+    margin-top: -20px;          
+    margin-bottom: 20px;       
+    border: none;
+    display: block; 
+}
+
+.tagline {
+    font-size: 14px;
+    color: #000000;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin-top: -10px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    text-transform: none;
+}
+.logo-stamp{
+    width:70px;
+    padding:5px;
+    border:2px dashed #000080;
+}
+
+.split-title{
+    font-size:60px;
+    font-weight:900;
+    color:#E8193B;
+    text-transform:uppercase;
+    letter-spacing:6px;
+}
+
+.split-title span{
+    color:#E8193B;
+}
+
+
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;              
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-menu > li > a {
+    text-decoration: none;
+    color: #000080;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-content {
+    display: none;     
+    position: absolute;
+    top: 100%;        
+    left: 50%;
+    transform: translateX(-50%); 
+    background: #ffffff;
+    min-width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 15px;
+    list-style: none;
+    border-top: 3px solid #A00000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: #000080;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 50px; 
+    display: block;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+main .why-chile{
+    max-width:900px;
+    margin:40px auto;
+    padding:10px;
+    text-align:center;
+    background:#fff;
+    border-left:6px solid #DA291C;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+main .why-chile h2{
+    font-size:30px;
+    color:#0a1931;
+}
+
+main .why-chile p{
+    font-size:14px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    width: calc(14% - 15px);
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease;
+}
+.card:hover{
+    transform:translateY(-4px);
+    border-bottom-color:#000080;
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:3/2;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#0039A6;
+    padding:10px 5px 2px;
+    font-size:1rem;
+    text-align:center;
+}
+
+.card p{
+    font-size:12px;
+    padding:0 10px 15px;
+    color:#777;
+    text-align:center;
+}
+
+/*ASTROTOURISM PAGE*/
+
+.astro-page header {
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    font-size: 25px; 
+}
+
+.astro-page .split-title {
+    font-size: 35px;
+    color: #E8193B;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.astro-page .split-title span{
+    color:#E8193B;
+}
+
+.astro-page .gallery{
+    max-width:2500px;
+    gap:40px;
+}
+
+.astro-page .card{
+    width:calc(25% - 15px);
+    border-bottom:4px solid #185adb;
+}
+
+.astro-page .card img{
+    height:280px;
+}
+
+.astro-page .card h2 {
+    font-size: 20px;           
+    color: #0a1931;           
+    font-family: 'Sreba', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 2px;      
+    padding: 15px 5px 5px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.astro-page .card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    padding: 0 15px 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.astro-page .header-line {
+    background-color: #0032A0;
+    width: 350px; 
+    height: 2px;
+    margin: 10px auto;
+    display: block;
+}
+
+.astro-page .tagline {
+    margin-top: 5px; 
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+}
+
+
+/*ADVENTURE PAGE*/
+.adventure-page header{
+    color: #000000;
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    font-size: 25px;
+}
+
+.adventure-page .split-title {
+    font-size: 37px; 
+    color: #E8193B; 
+    letter-spacing: 5px;
+}
+.adventure-page .card h1 {
+    font-size: 26px;           
+    color: #990000;           
+    font-family: 'Sreba', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 2px;      
+    padding: 15px 5px 5px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.adventure-page .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adventure-page .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.adventure-page .card {
+    flex: 0 1 calc(22% - 20px);
+    min-width: 250px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.adventure-page .card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 500px;
+    text-align: center;
+    padding: 0 15px 20px;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+.adventure-page .header-line {
+    background-color: #0032A0;
+    width: 250px; 
+    height: 3px;
+    margin: 10px auto;
+}
+
+.adventure-page .tagline {
+    margin-top: 5px; 
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+}
+
+.adventure-page .why-chile{
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    text-align:center;
+    background:#fff;
+    border-left:6px solid #DA291C;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.adventure-page .why-chile h2{
+    font-size:30px;
+    color:#0a1931;
+}
+
+.adventure-page .why-chile p{
+    font-size:14px;
+}
+
+/*GASTRONOMY*/
+.gastronomy-page header {
+    border-color: #0039A6; 
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    padding: 20px 15px; 
+}
+
+.gastronomy-page .split-title {
+    font-size: 35px; 
+    color: #E8193B;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.gastronomy-page .split-title span {
+    color: #E8193B; 
+}
+
+.gastronomy-page .header-line {
+    background-color: #0039A6;
+    width: 450px; 
+    height: 3px;
+    margin: 5px 0;
+    display: block;
+}
+
+.gastronomy-page .tagline {
+    margin-top: 5px; 
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+}
+
+.gastronomy-page .logo-stamp {
+    width: 70px;
+    padding: 5px;
+    border: 2px dashed #4B0011;
+    margin-bottom: 5px;
+}
+
+.gastronomy-story {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.story-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px #4B0011; 
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h3 {
+    font-size: 20px;
+    color: #4B0011;
+    margin-bottom: 15px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+}
+
+.story-text h1 {
+    font-size: 28px;
+    color: #4B0011;
+    margin-bottom: 15px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+}
+
+.story-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+/*CULTURAL PAGE*/
+.cultural-page header {
+    border: 5px solid #00008b; 
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    padding: 20px 15px; 
+}
+
+.cultural-page .split-title {
+    font-size: 35px;          
+    letter-spacing: 2px;     
+    margin: 8px 0;           
+    line-height: 1.1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.cultural-page .header-line {
+    width: 400px;            
+    height: 3px;
+    margin: 15px auto;
+}
+
+.cultural-page .tagline {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.cultural-page .cultural-story {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.cultural-page .story-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.cultural-page .story-row:nth-child(even) {
+    flex-direction: revert-layer;
+}
+
+.cultural-page .story-image img {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px; 
+    box-shadow: 20px 20px 0px #0039A6;
+}
+
+.cultural-page .story-text h3 {
+    font-size: 15px;
+    color: #D52B1E;
+    margin-bottom: 15px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+}
+
+.cultural-page .story-text h1 {
+    font-size: 26px;
+    text-align: center;
+    color: #D52B1E;
+    margin-bottom: 15px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+}
+
+.cultural-page footer {
+    background: #002D72;
+}
+/* --- NATURE & WILDLIFE  --- */
+
+.nature-page .split-title {
+    font-size: 35px;
+    color: #D52B1E; /* Primary Red */
+    letter-spacing: 4px;
+}
+
+.nature-page .split-title span {
+    color: #0039A6; 
+}
+
+.nature-page .header-line {
+    background-color: #0039A6;
+    width: 380px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+
+.nature-story-box {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(,0,0,0.05);
+}
+
+.story-column {
+    flex: 1;
+}
+
+.nature-page .story-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 15px 15px 0px #2D5A27; 
+    margin-bottom: 20px;
+}
+
+.nature-page .story-text h3 {
+    color: #2D5A27;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+}
+/* --- PALEONTOLOGY  --- */
+
+.paleo-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.paleo-page .split-title span {
+    color: #D52B1E; /* Red accent */
+}
+
+.paleo-page .header-line {
+    width: 420px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.paleo-intro {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-top: 6px solid #C19A6B; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.paleo-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.paleo-spotlight {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.spotlight-image {
+    flex:1 ;
+}
+
+.spotlight-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px #C19A6B; 
+}
+
+.spotlight-text {
+    flex: 1;
+}
+
+.spotlight-text h3 {
+    font-size: 18px;
+    color: #8B4513;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.spotlight-text h1 {
+    font-size: 32px;
+    color: #D52B1E;
+    margin-bottom: 20px;
+    font-family: 'Sreba', sans-serif;
+}
+
+.key-fact {
+    margin-top: 25px;
+    padding: 15px;
+    background: #fdf5e6;
+    border-left: 5px solid #8B4513;
+    font-size: 14px;
+    font-style: italic;
+}
+/* --- URBAN ART --- */
+
+.urban-page .split-title {
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.urban-page .header-line {
+    width: 250px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.urban-page .story-image img {
+    width: 80%;       
+    height: 400px;     
+    object-fit: cover; 
+    border-radius: 0;  
+    box-shadow: 20px 20px 0px #1a1a1a; 
+    
+    display: block;    
+    margin: 0 auto;    
+}
+
+.urban-page .story-text h3 {
+    color: #0039A6; 
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.urban-page .story-text h1 {
+    font-size: 32px;
+    color: #E8193B;
+    font-family: "Arial Black";
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.urban-page .story-text p {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 15px;       
+    line-height: 1.8;        
+    color: #333333;         
+    letter-spacing: 0.3px;    
+    margin-bottom: 25px;   
+    max-width: 600px;        
+    text-align: justify;     
+}
+
+/*THERMAL*/
+.thermal-page {
+    background: #f7f9fa;
+}
+
+.thermal-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.thermal-page .header-line{
+    width: 400px;
+    height: 3px;
+    margin-top: 5px;
+}
+.thermal-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.thermal-flex-card {
+    display: flex;
+    background: #ffffff;
+    margin-bottom: 40px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.thermal-flex-card.reversed {
+    flex-direction: row-reverse;
+}
+
+.thermal-image {
+    flex: 1; 
+}
+
+.thermal-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.thermal-text {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.thermal-text h3 {
+    color: #007A7A;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.thermal-text h1 {
+    color: #E8193B;
+    font-size: 30px;
+    font-family: 'Sreba', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.thermal-text p {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/*CINEMATIC*/
+.cinematic-page {
+    background: #ffffff;
+}
+.cinematic-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.cinematic-page .header-line{
+    width: 500px;
+    height: 3px;
+    margin-top: 10px;
+}
+.cinema-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+.cinema-flex-card {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.cinema-image {
+    flex: 1.2;
+    display: flex;
+}
+
+.cinema-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;   
+}
+
+.cinema-text {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+
+.cinema-text h3 {
+    color: #0039A6;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cinema-text h1 {
+    color: #E8193B;
+    font-family: Arial Black;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cinema-text p {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.cinema-fact {
+    margin-top: 25px;
+    padding: 20px;
+    border-left: 4px solid #E8193B;
+    background: #f9f9f9;
+}
+
+.cinema-fact strong {
+    display: block;
+    color: #1a1a1a;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.cinema-fact p {
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+}
+
+/*ANTARCTIC PAGE*/
+
+.antarctic-page {
+    background: #f4f7f9; 
+}
+
+.antarctic-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+.antarctic-page .header-line{
+    width: 400px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+.antarctic-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.split-row {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+/* Reverse the second row */
+.split-row.reversed {
+    flex-direction: row-reverse;
+}
+
+.image-box-separate {
+    flex: 1.2;
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.antarctic-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    min-height: 400px;
+}
+
+.text-box-separate {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box-separate h3 {
+    color: #0039A6;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.text-box-separate h1 {
+    color: #007A7A; /* Ice Teal color */
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.text-box-separate p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.info-fact {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #0039A6;
+    background: #f0f5ff;
+}
+
+.info-fact strong {
+    display: block;
+    color: #0039A6;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* MINING PAGE */
+
+.mining-page {
+    background: #f4f7f6;
+}
+
+.mining-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.mining-page .header-line {
+    width: 400px;
+    height: 3px;
+    background: #c0392b;
+    margin: 10px auto 20px auto;
+}
+
+.mining-split-container {
+    display: flex;
+    max-width: 1250px; 
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.image-card-horizontal {
+    flex: 1.5;
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.mining-img-wide {
+    width: 100%;
+    height: 445px; 
+    display: block;
+}
+
+/* TEXT BOX */
+.text-card-separate {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.text-card-separate h3 {
+    color: #7f8c8d;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-card-separate h1 {
+    color: #c0392b;
+    font-family: Arial Black;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-card-separate p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.mining-fact {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #c0392b;
+    background: #fdf2e9;
+}
+
+/*FESTIVAL*/
+
+.festival-page {
+    background: #ffffff;
+}
+
+.festival-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.festival-page .header-line {
+    width: 400px;
+    height: 3px;
+    margin: 10px auto 20px auto;
+}
+.festival-grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.festival-card {
+    flex: 1; 
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #E8193B;
+    font-family: Arial Black;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.card-content .location {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.card-content p {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* AVITOURISM PAGE */
+
+.avi-page {
+    background: #ffffff;
+    color: #333;
+}
+
+.avi-page .split-title {
+    font-size: 35px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.avi-page .header-line {
+    width: 400px;
+    height: 3px;
+    margin: 10px auto 20px auto;
+}
+
+.avi-grid-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-intro h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #27ae60; /* Nature Green */
+}
+
+.avi-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.avi-item {
+    flex: 1;
+    text-align: center;
+}
+
+.avi-img-wrapper {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 2px; 
+}
+
+.avi-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.avi-item:hover img {
+    transform: scale(1.05);
+}
+
+.avi-details h1 {
+    font-family: Arial Black;
+    color: #E8193B;
+    font-weight: 45px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.avi-details .subtitle {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.avi-details p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #000;
+}
+
+/* --- ETHNOTOURISM  STYLE --- */
+
+.ethno-page {
+    background: #fdfdfd;
+    color: #1a1a1a;
+}
+
+.ethno-page header {
+    background: #fff;
+    border: 5px solid #00008b;
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    margin: 20px 45px;
+    padding: 30px;
+}
+
+.ethno-page .split-title {
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.ethno-page .header-line {
+    width: 350px;
+    height: 4px;
+    margin: 10px auto 20px auto;
+}
+
+.ethno-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.info-card {
+    color: #000000;
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    flex: 1;
+    min-height: 400px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    color: #1a1a1a;
+    flex: 1.3;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text h2 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.card-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #000000; 
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card-text p strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+.card-text p {
+    color: #000000;
+}
+
+/* GHOST PAGE*/
+
+.ghost-page {
+    background: #ffffff;
+}
+
+.ghost-page .split-title {
+    font-size: 35px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.ghost-page .header-line {
+    width: 400px; 
+    margin-top: 5px;
+}
+
+/* THE GHOST TOWN CONTAINER BOX */
+.ghost-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.ghost-card {
+    display: flex;
+    background: #ffffff;      
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;       
+    overflow: hidden;        
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease;
+}
+
+.ghost-card:hover {
+    transform: translateY(-5px); 
+}
+
+.card-image {
+    flex: 1;
+    min-height: 400px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    gap: 10px;
+}
+
+.card-text {
+    flex: 1.2;
+    padding: 50px;         
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.card-text h3 {
+    font-size: 13px;
+    color: #007a7a;         
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.card-text h2 {
+    font-size: 32px;
+    color: #000000;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;        
+}
+/* GLACIOLOGY */
+
+.glaciology-page {
+    background: #ffffff;
+}
+
+.glaciology-page header {
+    border-color: #0039A6; 
+    padding: 20px 15px; 
+}
+
+.glaciology-page .split-title {
+    font-size: 35px; 
+    letter-spacing: 4px;
+}
+
+.glaciology-page .header-line {
+    width: 250px; 
+    margin-top: 5px;
+}
+
+.glaciology-story {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.story-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+
+    box-shadow: 20px 20px 0px #0039A6; 
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h3 {
+    font-size: 16px;
+    color: #0039A6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.story-text h1 {
+    font-size: 28px;
+    color: #1a1a1a; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.story-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* RURAL & ESTANCIAS*/
+
+.rural-heritage {
+    background: #ffffff;
+}
+
+.rural-heritage header {
+    border: 5px solid #00008b; 
+    box-shadow: -5px 10px 20px rgba(0, 57, 166, 0.2), -5px 10px 15px #0039A6;
+    padding: 20px 15px; 
+}
+
+.rural-heritage .split-title {
+    font-size: 35px;          
+    letter-spacing: 2px;     
+    margin: 8px 0;           
+    line-height: 1.1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #E8193B; 
+}
+
+.rural-heritage .header-line {
+    width: 400px;            
+    height: 3px;
+    background-color: #0039A6;
+    margin: 15px auto;
+}
+
+.cultural-story {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.story-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+
+.story-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px; 
+    box-shadow: 20px 20px 0px #0039A6;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h3 {
+    font-size: 15px;
+    color: #D52B1E; /* Red Accent */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.story-text h1 {
+    font-size: 26px;
+    color: #D52B1E;
+    margin-bottom: 15px;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+.story-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}
+/* WELLNESS*/
+
+.wellness-page {
+    background: #f4f7f6;
+}
+
+.wellness-page header {
+    border: 5px solid #007a7a; 
+    box-shadow: -5px 10px 20px rgba(0, 122, 122, 0.2), -5px 10px 15px #007a7a;
+    padding: 20px 15px; 
+}
+
+.wellness-page .split-title {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #E8193B;
+    font-weight: 900;
+}
+
+.wellness-page .header-line {
+    width: 350px;
+    height: 3px;
+    background: #007a7a;
+    margin: 15px auto;
+}
+
+.wellness-container {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.wellness-card {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.wellness-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    flex: 1;
+    min-height: 400px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    flex: 1.2;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #007a7a; 
+    margin-bottom: 10px;
+}
+
+.card-text h2 {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.card-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.card-text strong {
+    color: #007a7a;
+}
+
+/* FISHING PAGE */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.fishing-page .split-title {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.fishing-page .header-line {
+    width: 350px;
+    height: 3px;
+    margin-bottom: 10px;
+    margin-top:5px;
+}
+
+.card {
+    background: #fff;
+    width: 320px;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    /* This creates the red bar at the bottom */
+    border-bottom: 8px solid #E8193B; 
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center; 
+}
+
+.card h1 {
+    color: #990000;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- GLOBAL STYLES --- */
+.beach-page header {
+    border: 5px solid #007a7a; /* Calm Teal */
+    box-shadow: -5px 10px 20px rgba(0, 122, 122, 0.2), -5px 10px 15px #007a7a;
+    padding: 20px 15px; 
+}
+
+.beach-page .split-title {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #E8193B;
+    font-weight: 900;
+}
+
+.beach-page .header-line {
+    width: 350px;
+    height: 3px;
+    background: #007a7a;
+    margin: 15px auto;
+}
+
+.split-title {
+    font-size: 65px;
+    font-weight: 900;
+    color: #0039A6;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.split-title span {
+    color: #0039A6;
+}
+
+.header-line {
+    width: 300px;
+    height: 3px;
+    background-color: #0039A6;
+    margin: 20px 0;
+}
+
+.tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+/* --- EDITORIAL CONTENT LAYOUT --- */
+.beach-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.editorial-row {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 150px;
+    align-items: flex-end; /* Text sits at the bottom for first row */
+}
+
+.editorial-image {
+    flex: 1.6;
+}
+
+.editorial-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    box-shadow: 20px 20px 0px #0039A6; /* Navy shadow */
+    border-radius: 4px;
+}
+
+.editorial-text {
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+/* Reversal for La Serena */
+.editorial-row.reversed {
+    flex-direction: row-reverse;
+    align-items: flex-start; /* Text floats at the top for second row */
+}
+
+.editorial-row.reversed .editorial-image img {
+    box-shadow: -20px 20px 0px #E8193B; /* Red shadow */
+}
+
+.editorial-row.reversed .editorial-text {
+    text-align: right;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+/* Typography Details */
+.region-label {
+    display: block;
+    color: #E8193B;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.editorial-text h1 {
+    font-size: 52px;
+    font-family: 'Arial Black', sans-serif;
+    color: #002D72;
+    line-height: 0.9;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+footer{
+    background: #002D72;
+    color: #fff;
+    padding: 15px 45px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-row-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-label {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-line {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 10px 0;
+}
+
+.footer-row-bottom {
+    display: flex;
+    justify-content: space-between; /* Pushes content to the edges */
+    align-items: center;
+    font-size: 11px;
+    color: #bdc3c7;
+}
+
+.footer-meta {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-meta span {
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding-left: 10px;
+}
