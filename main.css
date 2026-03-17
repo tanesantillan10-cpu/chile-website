@@ -114,7 +114,6 @@ nav {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    animation: navFadeIn 0.2s ease-out;
 }
 
 .dropdown-content li {
@@ -131,15 +130,6 @@ nav {
     display: block;
     transition: all 0.3s ease;
     white-space: nowrap;
-}
-
-
-.nav-menu li a:hover,
-.nav-menu li a.active {
-    background-color: #A00000;
-    color: #ffffff;        
-    border-radius: 20px;   
-    transition: all 0.2s ease;
 }
 main .why-chile{
     max-width:900px;
