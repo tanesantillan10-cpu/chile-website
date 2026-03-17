@@ -162,8 +162,8 @@ main .why-chile p{
 
 .card {
     background: #fff;
-    width: calc(14% - 15px); /* Adjusted to fit 7 items per row */
-    min-width: 150px; /* Ensures they don't get too tiny on smaller screens */
+    width: calc(14% - 15px); 
+    min-width: 150px;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     overflow: hidden;
